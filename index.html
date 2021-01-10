@@ -3,26 +3,69 @@
     <head>
         <meta charset="utf-8">
         <title>Challenge: Links for learning</title>
+    
+    
     </head>
+    
+    
+   
+    
+    
+    
     <body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
         
-        <h1>Links for learning</h1>
+     <script>
+         
+        var a= prompt("Enter Marks in Subject 1")
+        var b= prompt("Enter Marks in Subject 2")
+        var c= prompt("Enter Marks in Subject 3")
+        var t= prompt("Enter Total Marks")
         
-        <ul>
-            <li> <a href="https://www.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-grouping-elements">
+        var per=(a+b+c)*100/t        //percentage
+        
+        
+        if (per>=80){
+        
+            var op1=$("<h1>Grade: A-one Remarks: Excellent")   // out-put
+            
+            
+            $("body").append(op1)
+            
+            else if (per>=70) {
+            
+                var op2=$("<h1>Grade: A, Remarks: Good")   // out-put
+            
+            
+            $("body").append(op2)
                 
-            </a>Fun</li>
-            <li> <a href="https://www.khanacademy.org/computing/computer-programming/html-css-js/html-css-js-intro/a/review-htmlcss">
+            else if (per>=60) {
+            
+                var op3=$("<h1>Grade: B, Remarks: You need to improve")   // out-put
+            
+            
+            $("body").append(op3)
+                
+                else {
+                
+                var op4=$("<h1>Grade: Fail, Remarks: Sorry")   // out-put
+                $("body").append(op4)
+                
+                }
                 
                 
-            </a>Education</li>
-            <li><a href="https://iris.fbr.gov.pk/public/txplogin.xhtml">
-                
-            </a>Newss</li>
-        </ul>
-
-       <a href="https://www.facebook.com/Rameez.Butt/posts/3597608640319202" > <img src="https://www.kasandbox.org/programming-images/cute/Heart.png"> </a>
-        <p> Marium in a box</p>
+            
+            } 
+        
+        
+        }
+         
+        
+        
+        
+    </script> 
+        
+       
         
     </body>
 </html>
