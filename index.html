@@ -13,7 +13,7 @@
     
     
     <body>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>   
+    
         
      <script>
          
@@ -27,29 +27,29 @@
         
         if (per>=80){
         
-            var op1=$("<h1>Grade: A-one Remarks: Excellent")   // out-put
+            document.write("Grade: A-one Remarks: Excellent")   // out-put
             
             
-            $("body").append(op1)
+           
             
             else if (per>=70) {
             
-                var op2=$("<h1>Grade: A, Remarks: Good")   // out-put
+                document.write("Grade: A, Remarks: Good")   // out-put
             
             
-            $("body").append(op2)
+            
                 
             else if (per>=60) {
             
-                var op3=$("<h1>Grade: B, Remarks: You need to improve")   // out-put
+                document.write("<h1>Grade: B, Remarks: You need to improve</h>")   // out-put
             
             
-            $("body").append(op3)
+           
                 
                 else {
                 
-                var op4=$("<h1>Grade: Fail, Remarks: Sorry")   // out-put
-                $("body").append(op4)
+                document.write("Grade: Fail, Remarks: Sorry")   // out-put
+                
                 
                 }
                 
