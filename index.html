@@ -19,40 +19,35 @@
         
      <script>
          
-
-        
+      var t=prompt("Put in temperature")
       
-        var a= prompt("Enter Marks in Subject 1")
-        var b= prompt("Enter Marks in Subject 2")
-        var c= prompt("Enter Marks in Subject 3")
-        var t= prompt("Enter Total Marks")
-        
-        var per=(a+b+c)*100/t        //percentage
-        
-        
-        if (per>=80){
-        
-            var op1=$("<h1>Grade: A-one Remarks: Excellent</h1>")   // out-put
-            
-            
-            $("body").append(op1)
-        }
-            else if (per>=70) {
-            
-                var op2=$("<h1>Grade: A, Remarks: Good</h1>")   // out-put
-                
-            
-            $("body").append(op2)
-            }                
-            else if (per>=60) {
-            
-                var op3=$("<h1>Grade: B, Remarks: You need to improve</h1>")   // out-put
-            
-            
-            $("body").append(op3)
-            }    
-            
-       
+      
+      if (t>40){
+                 
+        var p=$("<p>It is too much hot outside</p>")
+        $("body").append(p)
+          
+      }
+        else if (t>30){
+                 
+        var p=$("<p>The Weather today is Normal.</p>")
+        $("body").append(p)
+          
+      }
+      
+       else if (t>20){
+                 
+        var p=$("<p>Today’s Weather is cool.</p>")
+        $("body").append(p)
+          
+      }
+         
+         else if (t>10){
+                 
+        var p=$("<p>OMG! Today’s weather is so Cool.</p>")
+        $("body").append(p)
+          
+      }
          
          
       </script>
